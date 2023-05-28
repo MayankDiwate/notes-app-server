@@ -16,6 +16,7 @@ router.post("/add", async (req, res) => {
     userId: req.body.userId,
     title: req.body.title,
     content: req.body.content,
+    color: req.body.color,
   });
 
   await newNote.save();
